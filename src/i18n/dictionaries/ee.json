@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home":     "Ŋutɔ",
+    "gallery":  "Ƒoƒo",
+    "services": "Dɔwɔwɔ",
+    "contact":  "Ɖe Mɔ",
+    "shop":     "Xɔ Aʋawo"
+  },
+  "hero": {
+    "cta_primary":   "Ƒo Nuku",
+    "cta_secondary": "Kpɔ Ƒoƒo",
+    "badge":         "Aɖaŋu Dɔwɔwɔ"
+  },
+  "gallery": {
+    "title":    "Míaƒe Ƒoƒo",
+    "subtitle": "Nuku ƒe nyateƒe",
+    "filter_all":          "Katã",
+    "filter_mariage":      "Srɔ̃ƒoƒo",
+    "filter_casual":       "Vevie",
+    "filter_homme":        "Ŋutsu",
+    "filter_femme":        "Nyɔnu",
+    "filter_enfant":       "Viwo",
+    "filter_traditionnel": "Habɔbɔ"
+  },
+  "contact": {
+    "title":    "Ɖe Mɔ Kpe Míaƒe",
+    "subtitle": "Míaɖo ɖe wò aʋaƒo dzi",
+    "send":     "Ɖo Nyawo",
+    "whatsapp": "Alo WhatsApp dzi"
+  },
+  "common": {
+    "loading":      "Ɖem...",
+    "whatsapp_cta": "Ŋlɔ WhatsApp dzi"
+  },
+  "footer": {
+    "tagline": "Wò aŋutɔ gbɔ ƒe atike dɔwɔla",
+    "rights":  "Dɔwɔwɔwo katã le ŋu"
+  }
+}

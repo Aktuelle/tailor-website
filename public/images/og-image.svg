@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1A5C38"/>
+  <!-- Wax pattern overlay -->
+  <rect width="1200" height="630" fill="url(#wax)" opacity="0.15"/>
+  <defs>
+    <pattern id="wax" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <polygon points="40,4 76,40 40,76 4,40" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+      <circle cx="40" cy="40" r="5" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <!-- Gold accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="#D4AF37"/>
+  <!-- Logo circle -->
+  <circle cx="160" cy="315" r="80" fill="#D4AF37"/>
+  <text x="160" y="340" font-family="Georgia,serif" font-size="72" font-weight="bold" fill="#1A5C38" text-anchor="middle">É</text>
+  <!-- Title -->
+  <text x="280" y="285" font-family="Georgia,serif" font-size="56" font-weight="bold" fill="#FAF3E0">Atelier de Couture</text>
+  <text x="280" y="355" font-family="Georgia,serif" font-size="64" font-weight="bold" fill="#D4AF37" font-style="italic">Élégance</text>
+  <!-- Tagline -->
+  <text x="280" y="415" font-family="system-ui,sans-serif" font-size="28" fill="#FAF3E0" opacity="0.7">Votre couturier de confiance • Lomé, Togo 🇹🇬</text>
+</svg>

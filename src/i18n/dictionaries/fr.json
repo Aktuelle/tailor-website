@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home":     "Accueil",
+    "gallery":  "Galerie",
+    "services": "Services",
+    "contact":  "Contact",
+    "shop":     "Boutique"
+  },
+  "hero": {
+    "cta_primary":   "Commander une tenue",
+    "cta_secondary": "Voir la galerie",
+    "badge":         "Couture sur mesure"
+  },
+  "gallery": {
+    "title":    "Notre Galerie",
+    "subtitle": "Chaque tenue raconte une histoire",
+    "filter_all":          "Tout",
+    "filter_mariage":      "Mariage",
+    "filter_casual":       "Casual",
+    "filter_homme":        "Homme",
+    "filter_femme":        "Femme",
+    "filter_enfant":       "Enfant",
+    "filter_traditionnel": "Traditionnel"
+  },
+  "services": {
+    "title":    "Nos Services",
+    "subtitle": "De la conception à la livraison"
+  },
+  "contact": {
+    "title":       "Contactez-Nous",
+    "subtitle":    "Parlons de votre projet de tenue",
+    "name":        "Votre nom",
+    "email":       "Email",
+    "phone":       "Téléphone",
+    "garment":     "Type de vêtement",
+    "message":     "Votre message",
+    "photo":       "Photo d'inspiration (optionnel)",
+    "send":        "Envoyer le message",
+    "whatsapp":    "Ou contactez-nous sur WhatsApp",
+    "success":     "Message envoyé avec succès !",
+    "garment_options": ["Robe de mariée", "Tenue traditionnelle", "Costume homme", "Tenue casual", "Vêtement enfant", "Autre"]
+  },
+  "shop": {
+    "title":     "Notre Boutique",
+    "subtitle":  "Pièces prêtes à porter",
+    "buy":       "Acheter",
+    "fcfa":      "FCFA",
+    "in_stock":  "En stock",
+    "out_stock": "Rupture de stock"
+  },
+  "footer": {
+    "tagline":   "Votre couturier de confiance",
+    "rights":    "Tous droits réservés",
+    "follow":    "Suivez-nous"
+  },
+  "payment": {
+    "success_title":  "Paiement réussi !",
+    "success_msg":    "Merci pour votre commande. Nous vous contacterons bientôt.",
+    "cancel_title":   "Paiement annulé",
+    "cancel_msg":     "Votre paiement a été annulé. Vous pouvez réessayer.",
+    "back_home":      "Retour à l'accueil"
+  },
+  "common": {
+    "loading":     "Chargement...",
+    "read_more":   "Lire plus",
+    "back":        "Retour",
+    "close":       "Fermer",
+    "whatsapp_cta": "Écrire sur WhatsApp"
+  }
+}

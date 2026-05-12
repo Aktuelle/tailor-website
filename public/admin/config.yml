@@ -1,0 +1,83 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Enable editorial workflow
+publish_mode: editorial_workflow
+
+collections:
+  # ── Site Settings ──────────────────────────────────────────────
+  - name: "site-settings"
+    label: "⚙️ Paramètres du site"
+    files:
+      - name: "settings"
+        label: "Paramètres généraux"
+        file: "content/site-settings/settings.md"
+        fields:
+          - { label: "Nom du site",      name: site_name,      widget: string,   default: "Atelier de Couture Élégance" }
+          - { label: "Slogan",           name: tagline,        widget: string,   default: "Votre couturier de confiance à Lomé" }
+          - { label: "Ville",            name: city,           widget: string,   default: "Lomé" }
+          - { label: "Image héro (URL Cloudinary)", name: hero_image, widget: string }
+          - { label: "Numéro WhatsApp (format: 22890000000)", name: whatsapp,   widget: string }
+          - { label: "Email de contact", name: email,          widget: string }
+          - { label: "Adresse",          name: address,        widget: string }
+          - { label: "Activer la boutique en ligne", name: ecommerce_enabled, widget: boolean, default: false }
+          - { label: "CinetPay Site ID", name: cinetpay_site_id, widget: string, required: false }
+          - { label: "CinetPay API Key (⚠️ garder secret)", name: cinetpay_api_key, widget: string, required: false }
+          - { label: "Logo URL (Cloudinary)", name: logo_url, widget: string, required: false }
+
+  # ── Portfolio ───────────────────────────────────────────────────
+  - name: "portfolio"
+    label: "🖼️ Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titre",        name: title,       widget: string }
+      - { label: "Image (URL Cloudinary)", name: image, widget: string,
+          hint: "Collez l'URL Cloudinary de l'image. Ex: https://res.cloudinary.com/votre-cloud/image/upload/v1234/photo.jpg" }
+      - { label: "Catégorie",    name: category,    widget: select,
+          options: ["mariage", "casual", "homme", "femme", "enfant", "traditionnel"] }
+      - { label: "Date",         name: date,        widget: datetime }
+      - { label: "Description",  name: description, widget: text, required: false }
+      - { label: "Mis en avant", name: featured,    widget: boolean, default: false }
+
+  # ── Testimonials ────────────────────────────────────────────────
+  - name: "testimonials"
+    label: "💬 Témoignages"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nom du client",  name: name,   widget: string }
+      - { label: "Avatar (URL)",   name: avatar, widget: string, required: false }
+      - { label: "Témoignage",     name: text,   widget: text }
+      - { label: "Note (1 à 5)",   name: rating, widget: number, min: 1, max: 5, default: 5 }
+      - { label: "Ville",          name: city,   widget: string, required: false }
+
+  # ── Pages ───────────────────────────────────────────────────────
+  - name: "pages"
+    label: "📄 Pages"
+    folder: "content/pages"
+    create: false
+    fields:
+      - { label: "Titre",   name: title, widget: string }
+      - { label: "Contenu", name: body,  widget: markdown }
+
+  # ── Products ────────────────────────────────────────────────────
+  - name: "products"
+    label: "🛍️ Produits (boutique)"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nom du produit",  name: name,        widget: string }
+      - { label: "Prix (FCFA)",     name: price,       widget: number }
+      - { label: "Image (URL Cloudinary)", name: image, widget: string }
+      - { label: "Description",     name: description, widget: text }
+      - { label: "En stock",        name: in_stock,    widget: boolean, default: true }
+      - { label: "Catégorie",       name: category,    widget: select,
+          options: ["prêt-à-porter", "accessoire", "tissu", "autre"] }

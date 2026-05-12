@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Variables ─────────────────────────────────────────────────────── */
+:root {
+  --font-display: 'Playfair Display';
+  --font-body:    'DM Sans';
+
+  --color-forest:  #1A5C38;
+  --color-gold:    #D4AF37;
+  --color-earth:   #8B5E3C;
+  --color-cream:   #FAF3E0;
+  --color-charcoal:#1C1C1E;
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────── */
+@layer base {
+  html { scroll-behavior: smooth; }
+  
+  body {
+    @apply bg-cream text-charcoal;
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), Georgia, serif;
+  }
+
+  /* Accessible focus ring */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold;
+  }
+}
+
+/* ── Components ────────────────────────────────────────────────────────── */
+@layer components {
+  /* Gold accent underline for section titles */
+  .title-underline {
+    @apply relative inline-block;
+  }
+  .title-underline::after {
+    content: '';
+    @apply absolute left-0 -bottom-2 h-1 w-16 bg-gold rounded-full;
+  }
+
+  /* Button variants */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-body font-semibold
+           bg-forest text-cream border-2 border-forest
+           hover:bg-forest-dark hover:border-forest-dark
+           transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gold;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-body font-semibold
+           bg-transparent text-cream border-2 border-cream
+           hover:bg-cream hover:text-forest
+           transition-all duration-200;
+  }
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-body font-semibold
+           bg-gold text-charcoal border-2 border-gold
+           hover:bg-gold-dark hover:border-gold-dark
+           transition-all duration-200;
+  }
+
+  /* Card */
+  .card {
+    @apply bg-white rounded-2xl shadow-md overflow-hidden
+           hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* Wax-pattern section divider */
+  .wax-divider {
+    @apply relative overflow-hidden;
+    background-image: url('/images/wax-pattern.svg');
+    background-repeat: repeat;
+    background-size: 80px 80px;
+    color: var(--color-forest);
+  }
+
+  /* Star rating */
+  .stars { @apply flex gap-0.5 text-gold; }
+}
+
+/* ── Animations ─────────────────────────────────────────────────────────── */
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+  .opacity-0-init { opacity: 0; }
+}
+
+/* ── Prose styles for markdown pages ────────────────────────────────────── */
+.prose-elegance {
+  @apply max-w-none text-charcoal;
+}
+.prose-elegance h2 {
+  @apply text-2xl font-display text-forest mt-8 mb-3;
+}
+.prose-elegance h3 {
+  @apply text-xl font-display text-earth mt-6 mb-2;
+}
+.prose-elegance p {
+  @apply leading-relaxed mb-4;
+}
+.prose-elegance ul, .prose-elegance ol {
+  @apply ml-6 mb-4 space-y-1;
+}
+.prose-elegance li { @apply list-disc; }
+.prose-elegance strong { @apply text-forest font-semibold; }
+.prose-elegance hr { @apply border-gold/30 my-8; }
