@@ -1,6 +1,6 @@
-# Atelier de Couture Élégance – Site Web
+# Klin Clothing – Website
 
-Site web complet pour atelier de couture à Lomé, Togo. Mobile-first, multilingue (FR/EE), avec CMS intégré et paiement Mobile Money.
+Professional clothing design and tailoring website for Klin Clothing in Togo. Mobile-first, multilingual (FR/EE), with integrated CMS and Mobile Money payment support.
 
 ## 🚀 Démarrage rapide
 

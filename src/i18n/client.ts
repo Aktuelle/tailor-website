@@ -3,14 +3,16 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
 import fr from './dictionaries/fr.json';
 import ee from './dictionaries/ee.json';
+import en from './dictionaries/en.json';
 
 // ── Types ──────────────────────────────────────────────────────────────────
-export type Locale = 'fr' | 'ee';
+export type Locale = 'fr' | 'ee' | 'en';
 type Dict = Record<string, unknown>;
 
 const dictionaries: Record<Locale, Dict> = {
   fr: fr as Dict,
   ee: ee as Dict,
+  en: en as Dict,
 };
 
 /** Safely get a nested translation value via dot-separated key */

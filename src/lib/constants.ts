@@ -15,4 +15,4 @@ export type PortfolioCategory = typeof PORTFOLIO_CATEGORIES[number]['value'];
 export const CINETPAY_CHECKOUT_URL = 'https://api-checkout.cinetpay.com/v2/payment';
 
 /** Site name fallback */
-export const SITE_NAME = 'Atelier de Couture Élégance';
+export const SITE_NAME = 'Klin Clothing';

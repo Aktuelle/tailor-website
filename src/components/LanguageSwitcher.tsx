@@ -3,6 +3,7 @@
 import { useI18n, type Locale } from '@/i18n/client';
 
 const LOCALES: { code: Locale; label: string; flag: string }[] = [
+  { code: 'en', label: 'EN', flag: '🇬🇧' },
   { code: 'fr', label: 'FR', flag: '🇫🇷' },
   { code: 'ee', label: 'EE', flag: '🇹🇬' },
 ];

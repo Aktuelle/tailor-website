@@ -43,8 +43,8 @@ function Header({ settings }: { settings: SiteSettings }) {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo + Name */}
           <Link href="/" className="flex items-center gap-3 group" onClick={() => setMenuOpen(false)}>
-            <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-charcoal font-display font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
-              É
+            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-accent font-display font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
+              K
             </div>
             <div className="hidden sm:block">
               <p className="font-display text-cream font-semibold text-sm leading-tight">

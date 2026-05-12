@@ -6,7 +6,7 @@ import { getSiteSettings } from '@/lib/markdown';
 
 /** Viewport & theme colour (separate export as required by Next.js 14) */
 export const viewport: Viewport = {
-  themeColor:    '#1A5C38',
+  themeColor:    '#2D5A5A',
   width:         'device-width',
   initialScale:  1,
   viewportFit:   'cover',
@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title:       `${settings.site_name} – ${settings.city}`,
     description: settings.tagline,
-    keywords:    ['couturier', 'togo', 'lomé', 'wax', 'mode africaine', 'couture sur mesure'],
+    keywords:    ['clothing', 'tailor', 'togo', 'lomé', 'fashion', 'custom tailoring', 'klin clothing'],
     authors:     [{ name: settings.site_name }],
     openGraph: {
       title:       settings.site_name,

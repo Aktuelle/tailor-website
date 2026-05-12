@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home":     "Home",
+    "gallery":  "Gallery",
+    "services": "Services",
+    "contact":  "Contact",
+    "shop":     "Shop"
+  },
+  "hero": {
+    "cta_primary":   "Order a Custom Outfit",
+    "cta_secondary": "View Gallery",
+    "badge":         "Custom Tailoring"
+  },
+  "gallery": {
+    "title":    "Our Gallery",
+    "subtitle": "Every outfit tells a story",
+    "filter_all":          "All",
+    "filter_mariage":      "Wedding",
+    "filter_casual":       "Casual",
+    "filter_homme":        "Men",
+    "filter_femme":        "Women",
+    "filter_enfant":       "Kids",
+    "filter_traditionnel": "Traditional"
+  },
+  "services": {
+    "title":    "Our Services",
+    "subtitle": "From Design to Delivery"
+  },
+  "contact": {
+    "title":       "Contact Us",
+    "subtitle":    "Let's talk about your outfit project",
+    "name":        "Your Name",
+    "email":       "Email",
+    "phone":       "Phone",
+    "garment":     "Type of Garment",
+    "message":     "Your Message",
+    "photo":       "Inspiration Photo (optional)",
+    "send":        "Send Message",
+    "whatsapp":    "Or contact us on WhatsApp",
+    "success":     "Message sent successfully!",
+    "garment_options": ["Wedding Dress", "Traditional Outfit", "Men's Suit", "Casual Outfit", "Children's Clothing", "Other"]
+  },
+  "shop": {
+    "title":     "Our Shop",
+    "subtitle":  "Ready-to-Wear Pieces",
+    "buy":       "Buy",
+    "fcfa":      "FCFA",
+    "in_stock":  "In Stock",
+    "out_stock": "Out of Stock"
+  },
+  "footer": {
+    "tagline":   "Your Trusted Tailor",
+    "rights":    "All Rights Reserved",
+    "follow":    "Follow Us"
+  },
+  "payment": {
+    "success_title":  "Payment Successful!",
+    "success_msg":    "Thank you for your order. We'll contact you soon.",
+    "cancel_title":   "Payment Cancelled",
+    "cancel_msg":     "Your payment was cancelled. You can try again.",
+    "back_home":      "Back to Home"
+  },
+  "common": {
+    "loading":     "Loading...",
+    "read_more":   "Read More",
+    "back":        "Back",
+    "close":       "Close",
+    "whatsapp_cta": "Message on WhatsApp"
+  }
+}

@@ -9,11 +9,12 @@
   --font-display: 'Playfair Display';
   --font-body:    'DM Sans';
 
-  --color-forest:  #1A5C38;
-  --color-gold:    #D4AF37;
-  --color-earth:   #8B5E3C;
-  --color-cream:   #FAF3E0;
-  --color-charcoal:#1C1C1E;
+  --color-primary:  #2D5A5A;
+  --color-accent:   #FFFFFF;
+  --color-gold:     #D4AF37;
+  --color-earth:    #8B5E3C;
+  --color-cream:    #FAF3E0;
+  --color-charcoal: #1C1C1E;
 }
 
 /* ── Base ──────────────────────────────────────────────────────────────── */
@@ -49,14 +50,14 @@
   /* Button variants */
   .btn-primary {
     @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-body font-semibold
-           bg-forest text-cream border-2 border-forest
-           hover:bg-forest-dark hover:border-forest-dark
+           bg-primary text-accent border-2 border-primary
+           hover:bg-primary/90 hover:border-primary/90
            transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gold;
   }
   .btn-secondary {
     @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-body font-semibold
-           bg-transparent text-cream border-2 border-cream
-           hover:bg-cream hover:text-forest
+           bg-transparent text-accent border-2 border-accent
+           hover:bg-accent hover:text-primary
            transition-all duration-200;
   }
   .btn-gold {
@@ -78,7 +79,7 @@
     background-image: url('/images/wax-pattern.svg');
     background-repeat: repeat;
     background-size: 80px 80px;
-    color: var(--color-forest);
+    color: var(--color-primary);
   }
 
   /* Star rating */
@@ -100,7 +101,7 @@
   @apply max-w-none text-charcoal;
 }
 .prose-elegance h2 {
-  @apply text-2xl font-display text-forest mt-8 mb-3;
+  @apply text-2xl font-display text-primary mt-8 mb-3;
 }
 .prose-elegance h3 {
   @apply text-xl font-display text-earth mt-6 mb-2;
@@ -112,5 +113,5 @@
   @apply ml-6 mb-4 space-y-1;
 }
 .prose-elegance li { @apply list-disc; }
-.prose-elegance strong { @apply text-forest font-semibold; }
+.prose-elegance strong { @apply text-primary font-semibold; }
 .prose-elegance hr { @apply border-gold/30 my-8; }

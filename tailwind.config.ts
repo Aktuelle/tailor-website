@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Togolese / tropical palette
-        forest:  { DEFAULT: '#1A5C38', light: '#2E8B57', dark: '#0F3D26' },
+        // Klin Clothing palette - Teal/Dark Green & White
+        primary: { DEFAULT: '#2D5A5A', light: '#4A7C7C', dark: '#1F3F3F' },
+        accent:  { DEFAULT: '#FFFFFF', light: '#F5F5F5', dark: '#E8E8E8' },
         gold:    { DEFAULT: '#D4AF37', light: '#F0C94A', dark: '#A0832A' },
         earth:   { DEFAULT: '#8B5E3C', light: '#B07D52', dark: '#5E3E27' },
         cream:   { DEFAULT: '#FAF3E0', dark: '#EDE0C8' },
